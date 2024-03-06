@@ -1,0 +1,22 @@
+{
+  "name": "sleepy-spiral",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "wrangler pages dev --proxy 4321 --kv PAGE_VIEWS -- npm run start",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro build && npx wrangler pages dev ./dist --kv PAGE_VIEWS",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.5.6",
+    "@astrojs/cloudflare": "^9.1.0",
+    "astro": "^4.4.13",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240222.0",
+    "wrangler": "^3.31.0"
+  }
+}
