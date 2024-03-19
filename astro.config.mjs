@@ -8,8 +8,9 @@ export default defineConfig({
 	adapter: cloudflare({
 		runtime: {
 			mode: 'local',
+			type: 'pages',
 			bindings: {
-				PAGE_VIEWS: {
+				KV_LEGACY: {
 					type: 'kv',
 				},
 			},

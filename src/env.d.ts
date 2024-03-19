@@ -2,7 +2,7 @@
 
 type KVNamespace = import('@cloudflare/workers-types').KVNamespace;
 type ENV = {
-	PAGE_VIEWS: KVNamespace;
+	KV_LEGACY: KVNamespace;
 };
 
 type Runtime = import('@astrojs/cloudflare').AdvancedRuntime<ENV>;
